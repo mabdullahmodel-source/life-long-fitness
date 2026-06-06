@@ -73,7 +73,6 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <Button
               onClick={() => scrollTo('#contact')}
-onClick={() => scrollTo('#contact')}
               className="hidden sm:inline-flex animate-pulse-glow bg-primary text-primary-foreground font-heading font-bold text-xs tracking-wider uppercase px-6 h-11 hover:bg-primary/90 transition-all"
             >
               Get Free Trial
