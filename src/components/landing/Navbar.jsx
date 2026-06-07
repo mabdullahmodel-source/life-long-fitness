@@ -36,26 +36,18 @@ export default function Navbar() {
         scrolled
           ? 'bg-background/90 backdrop-blur-xl border-b border-border/50'
           : 'bg-transparent'
-}`}
+      }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <button onClick={() => scrollTo('#home')} className="flex items-center gap-3 group">
-            <div className="w-11 h-11 flex items-center justify-center">
-              <img src={LOGO_URL} alt="Life Long Fitness Center Logo" className="w-10 h-10 object-contain drop-shadow-[0_0_8px_hsla(0,85%,50%,0.5)]" />
-            </div>
+            <img src={LOGO_URL} alt="Life Long Fitness Center Logo" className="w-10 h-10 object-contain drop-shadow-[0_0_8px_hsla(0,85%,50%,0.5)]" />
             <div className="hidden sm:block">
-              <p className="font-heading font-extrabold text-sm tracking-widest text-foreground uppercase">
-                Life Long
-              </p>
-              <p className="font-heading text-[10px] tracking-[0.25em] text-muted-foreground uppercase">
-                Fitness Center
-              </p>
+              <p className="font-heading font-extrabold text-sm tracking-widest text-foreground uppercase">Life Long</p>
+              <p className="font-heading text-[10px] tracking-[0.25em] text-muted-foreground uppercase">Fitness Center</p>
             </div>
           </button>
 
-          {/* Desktop Links */}
           <div className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <button
@@ -69,25 +61,17 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA + Mobile Toggle */}
           <div className="flex items-center gap-3">
-            <Button
-              
-              
-            >
+            <Button onClick={() => scrollTo('#contact')} className="hidden lg:flex">
               Get Free Trial
             </Button>
-            <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 text-foreground"
-            >
+            <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden p-2 text-foreground">
               {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -106,10 +90,7 @@ export default function Navbar() {
                   {link.label}
                 </button>
               ))}
-              <Button
-                onClick={() => scrollTo('#contact')} 
-className="w-full mt-4 animate-pulse-glow bg-primary text-primary-foreground font-heading font-bold text-xs tracking-wider uppercase h-12"
-              >
+              <Button onClick={() => scrollTo('#contact')} className="w-full mt-4">
                 Get Free Trial
               </Button>
             </div>
