@@ -31,42 +31,16 @@ export default function Navbar() {
   };
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? 'bg-background/90 backdrop-blur-xl border-b border-border/50'
-          : 'bg-transparent'
-      }`}
-    >
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-background/90 backdrop-blur-xl border-b border-border/50' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <button onClick={() => scrollTo('#home')} className="flex items-center gap-3 group">
-            <img src={LOGO_URL} alt="Life Long Fitness Center Logo" className="w-10 h-10 object-contain drop-shadow-[0_0_8px_hsla(0,85%,50%,0.5)]" />
-            <div className="hidden sm:block">
-              <p className="font-heading font-extrabold text-sm tracking-widest text-foreground uppercase">Life Long</p>
-              <p className="font-heading text-[10px] tracking-[0.25em] text-muted-foreground uppercase">Fitness Center</p>
-            </div>
+          <button onClick={() => scrollTo('#home')} className="flex items-center gap-3">
+            <img src={LOGO_URL} alt="Logo" className="w-10 h-10" />
           </button>
-
-          <div className="hidden lg:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => scrollTo(link.href)}
-                className="px-4 py-2 text-sm font-body font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
-              >
-                {link.label}
-                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-primary group-hover:w-6 transition-all duration-300" />
-              </button>
-            ))}
-          </div>
-
+          
           <div className="flex items-center gap-3">
-            <Button onClick={() => scrollTo('#contact')} className="hidden lg:flex">
-              Get Free Trial
-            </Button>
-            <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden p-2 text-foreground">
-              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden p-2">
+              {mobileOpen ? <X /> : <Menu />}
             </button>
           </div>
         </div>
@@ -78,15 +52,11 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-background/95 backdrop-blur-xl border-b border-border overflow-hidden"
+            className="lg:hidden bg-background border-b overflow-hidden"
           >
             <div className="px-6 py-6 space-y-1">
               {navLinks.map((link) => (
-                <button
-                  key={link.href}
-                  onClick={() => scrollTo(link.href)}
-                  className="block w-full text-left px-4 py-3 text-sm font-body font-medium text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-lg transition-colors"
-                >
+                <button key={link.href} onClick={() => scrollTo(link.href)} className="block w-full py-3 text-left">
                   {link.label}
                 </button>
               ))}
