@@ -44,7 +44,7 @@ export default function ContactSection() {
                   <div>
                     <p className="font-heading font-semibold text-sm text-foreground mb-1">Location</p>
                     <p className="text-muted-foreground text-sm font-body leading-relaxed">
-                      Al Raha, C-08 Building, Canal View, Abu Dhabi
+                      Sheikha Shamsa Tower, Hamdan Bin Mohammed St, Al Danah, Abu Dhabi
                     </p>
                   </div>
                 </div>
@@ -98,14 +98,14 @@ export default function ContactSection() {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <a
-              href="https://maps.app.goo.gl/cXmmmpirQoPGXfhcA"
+              href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.613653159336!2d54.35807937520798!3d24.487353061033994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e662993874381%3A0x609503415783307e!2sLifetime%20Fitness!5e0!3m2!1sen!2sae!4v1717770000000!5m2!1sen!2sae"
               target="_blank"
               rel="noopener noreferrer"
               className="block rounded-2xl overflow-hidden border border-border/50 hover:border-white/40 transition-all group h-full min-h-[400px] relative"
             >
               <iframe
                 title="Life Long Fitness Center Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3633.123!2d54.6!3d24.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDI3JzAwLjAiTiA1NMKwMzYnMDAuMCJF!5e0!3m2!1sen!2sae!4v1700000000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.613653159336!2d54.35807937520798!3d24.487353061033994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e662993874381%3A0x609503415783307e!2sLifetime%20Fitness!5e0!3m2!1sen!2sae!4v1717770000000!5m2!1sen!2sae"
                 className="w-full h-full min-h-[400px] grayscale hover:grayscale-0 transition-all duration-700"
                 allowFullScreen=""
                 loading="lazy"
