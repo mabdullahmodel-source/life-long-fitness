@@ -44,7 +44,7 @@ export default function ContactSection() {
                   <div>
                     <p className="font-heading font-semibold text-sm text-foreground mb-1">Location</p>
                     <p className="text-muted-foreground text-sm font-body leading-relaxed">
-                      Sheikha Shamsa Tower, Hamdan Bin Mohammed St, Al Danah, Abu Dhabi
+                      LIFELONG FITNESS CENTER, Abu Dhabi
                     </p>
                   </div>
                 </div>
@@ -98,14 +98,14 @@ export default function ContactSection() {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <a
-              href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.613653159336!2d54.35807937520798!3d24.487353061033994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e662993874381%3A0x609503415783307e!2sLifetime%20Fitness!5e0!3m2!1sen!2sae!4v1717770000000!5m2!1sen!2sae"
+              href="https://www.google.com/maps/place/LIFELONG+FITNESS+CENTER/@24.4153023,54.5559781,13z"
               target="_blank"
               rel="noopener noreferrer"
               className="block rounded-2xl overflow-hidden border border-border/50 hover:border-white/40 transition-all group h-full min-h-[400px] relative"
             >
               <iframe
-                title="Life Long Fitness Center Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.613653159336!2d54.35807937520798!3d24.487353061033994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e662993874381%3A0x609503415783307e!2sLifetime%20Fitness!5e0!3m2!1sen!2sae!4v1717770000000!5m2!1sen!2sae"
+                title="LIFELONG FITNESS CENTER Location"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d91145.47771337123!2d54.55597812795095!3d24.415302345109733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e45d64bdd490b%3A0xe13a037cfff636a1!2sLIFELONG%20FITNESS%20CENTER!5e0!3m2!1sen!2sae!4v1780848792806!5m2!1sen!2sae"
                 className="w-full h-full min-h-[400px] grayscale hover:grayscale-0 transition-all duration-700"
                 allowFullScreen=""
                 loading="lazy"
